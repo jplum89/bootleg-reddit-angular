@@ -1,0 +1,21 @@
+<html>
+<div class="tops">
+    <p class="leg">BOOT-LEG REDDIT</p>
+</div>
+
+<div class="row">
+    <div *ngFor="let d of _data" class="col-6" style="width: 100%">
+        <p-card [header]="d.title" [style]="{width: '100%'}" styleClass="ui-card-shadow" >
+          <p-header>
+              <img src="Card" [src]="d.image">
+          </p-header>
+          <div><a [href]="d.link">Go To Page</a></div>
+          <p-footer>
+              <button pButton type="button">Vote Down</button>
+              <button pButton type="button">Vote Up</button>
+          </p-footer>
+      </p-card>
+      </div>
+</div>
+</html>
+
